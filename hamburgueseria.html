@@ -5,23 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hamburguesería Rovers</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <header>
-            <div>
-                <p> rover@gmail.com</p>
-                <p> 91 555 66 77</p>
-                <p> Carrito Compra</p>
-                <p>Usuario</p>
+            <div class="contenedor-azul">
+                <div class="cabecera">
+                    <i class="fa-solid fa-envelope" style="color: #ff6600;"></i>
+                    <p> rover@gmail.com</p>
+                </div>
+                <div class="cabecera">
+                    <i class="fa-solid fa-phone" style="color: #ff6600;"></i>
+                    <p> 91 555 66 77</p>
+                </div> 
+                <div class="cabecera">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ff6600;"></i>
+                    <p> Carrito Compra</p>
+                </div>
+                <div class="cabecera">
+                    <i class="fa-solid fa-circle-user" style="color: #ff6600;"></i>
+                    <p>Usuario</p>
+                </div>
             </div>
-            <div>
-                <img src="C:\Users\ANA\Desktop\BOOTCAMP FULLSTACK\Ejercicio HTML y CSS Hamburgueseria\images\logo.jpg" alt="logo">
-                <span>
+            <div class="navegador">
+                <img src="images\logo.jpg" alt="logo" height=30px>
+                <nav>
                     <a target="_blank" href="hamburgueseria.html"> Inicio </a>
                     <a target="_blank" href="hamburgueseria.html"> Menu </a>
                     <a target="_blank" href="hamburgueseria.html"> Blog </a>
                     <a target="_blank" href="hamburgueseria.html"> Equipo </a>
-                </span>
+                </nav>
             </div>
         </header>
         <main>
@@ -31,8 +44,38 @@
                 <h3>Come a partir de 15€</h3>
                 <button type="button" id="Carta"> Nuestra Carta</button>
             </section>
-
+            <section>
+                <h3> Our <span> Services </span></h3>
+                <article>
+                    <p> <strong> 1. Carne 100% natural </strong></p>
+                    <p> Lorem ipsum dolor sit amet</p>
+                    <a href="hamburgueseria.html"> Leer más </a>
+                </article>
+                <article>
+                    <p> <strong> 2. Cocina moderna </strong></p>
+                    <p> Lorem ipsum dolor sit amet</p>
+                    <a href="hamburgueseria.html"> Leer más </a>
+                </article>   
+                 <article>
+                    <p> <strong> 3. Servicio impecable </strong></p>
+                    <p> Lorem ipsum dolor sit amet</p>
+                    <a href="hamburgueseria.html"> Leer más </a>
+                </article>
+            </section>
+            <section>
+                <img src="images\about-main.jpg" alt="sobre nosotros" width=50%>
+                <h3> About <span> Us </span></h3>
+                <article>
+                    <p> <strong> The History </strong></p>
+                    <p><span> Our Restaurant</span></p>
+                    <p> Lorem ipsum dolor sit amet</p>
+                    <button type="button" id="Carta"> Leer más</button>
+                </article>
+            </section>
         </main>
+        <footer>
+            <p> aviso de privacidad </p>
+        </footer>        
     </body>
 
 </html>

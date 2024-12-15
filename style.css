@@ -1,0 +1,50 @@
+/* Reset CSS basico */
+html, body {
+    margin: 0;               /* Elimina márgenes predeterminados */
+    padding: 0;              /* Elimina padding predeterminado */
+    overflow-x: hidden;        /* Oculta cualquier desbordamiento horizontal */
+    box-sizing: border-box;  /* Asegura que el padding no altere el tamaño */
+  }
+
+
+.contenedor-azul {
+    background-color: rgb(28, 28, 58);
+    display:flex; /* Flexbox para colocar elementos en línea */
+    justify-content: space-around;
+    
+}
+
+
+.cabecera{
+    color:white;
+    display: flex;          /* Flexbox para alinear texto e icono */
+    justify-content: space-around; 
+    align-items: center;     /* Alineación vertical */
+    gap: 10px;               /* Espaciado entre el texto y el icono */
+    padding: 10px;             /* Espaciado interno */
+    margin-bottom: 15px;         /* Separación entre elementos */
+}
+
+.cabecera p{
+    margin: 0;              /* Elimina márgenes predeterminados */
+    flex: 1;                /* Permite que el texto ocupe espacio restante */
+    word-wrap: break-word;  /* Ajusta texto si es muy largo */
+}
+
+.cabecera .fa-solid {
+    flex-shrink: 0;         /* Impide que el icono se reduzca al cambiar el tamaño de la pantalla */
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    & a{
+    color:grey;
+    text-decoration: none;
+    
+    
+    }
+}
+
+
