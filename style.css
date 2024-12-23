@@ -1,17 +1,31 @@
-/* Reset CSS basico */
-html, body {
-    margin: 0;               /* Elimina márgenes predeterminados */
-    padding: 0;              /* Elimina padding predeterminado */
-    overflow-x: hidden;        /* Oculta cualquier desbordamiento horizontal */
-    box-sizing: border-box;  /* Asegura que el padding no altere el tamaño */
-  }
 
+/* html5resetcss */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+/* Cabecera de la web */
 
 .contenedor-azul {
     background-color: rgb(28, 28, 58);
     display:flex; /* Flexbox para colocar elementos en línea */
     justify-content: space-around;
-    
+    align-items: center;
+    p {
+        display: none;
+    }
 }
 
 
@@ -22,29 +36,184 @@ html, body {
     align-items: center;     /* Alineación vertical */
     gap: 10px;               /* Espaciado entre el texto y el icono */
     padding: 10px;             /* Espaciado interno */
-    margin-bottom: 15px;         /* Separación entre elementos */
-}
-
-.cabecera p{
-    margin: 0;              /* Elimina márgenes predeterminados */
-    flex: 1;                /* Permite que el texto ocupe espacio restante */
-    word-wrap: break-word;  /* Ajusta texto si es muy largo */
-}
-
-.cabecera .fa-solid {
-    flex-shrink: 0;         /* Impide que el icono se reduzca al cambiar el tamaño de la pantalla */
-}
-
-nav {
-    display: flex;
-    justify-content: right;
-    gap: 30px;
-    & a{
-    color:grey;
-    text-decoration: none;
-    
-    
+    p {
+        margin: 0;              /* Elimina márgenes predeterminados */
+        flex: 1;                /* Permite que el texto ocupe espacio restante */
+        word-wrap: break-word;  /* Ajusta texto si es muy largo */
+    }
+    .fa-solid {
+        flex-shrink: 0;         /* Impide que el icono se reduzca al cambiar el tamaño de la pantalla */
     }
 }
 
 
+.desplegable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+hr {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    & a{
+        display:flex;
+        justify-content: center;
+        color:grey;
+        text-decoration: none;
+        font-family: "Roboto", serif;
+        }
+}
+
+/* Cuerpo de la web */
+
+.fondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    h1{
+        color: whitesmoke;
+        font-size: 24px;
+        font-family: "Comic Neue", serif;
+        font-weight: 700;
+        margin: 10px;
+        width: 100%;
+    }
+    h2 {
+        color:coral;
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        margin: 10px;
+        width: 100%;
+    }
+    h3 {
+        color: whitesmoke;
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .redes {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}
+
+button {
+    padding: 8px 10px;
+    background-color: coral;
+    color: whitesmoke;
+    border: none;
+    margin-left: 10px;
+}
+
+section {
+    h3{
+        font-size: 22px;
+        font-family: "Comic Neue", serif;
+        text-align: center;
+        padding-top: 20px;
+        span {
+            color: orangered
+        }
+    }
+
+    .linea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .x {
+            color:orangered;
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 4px;
+            position: relative;
+            z-index: 2;
+        }
+    
+        hr {
+            background-color: orangered;
+            width: 100px;
+            height: 2px;
+            margin-left: auto;
+            position: absolute;
+            left: calc(50% - 50px );
+            top: 10;
+            z-index: 1;
+        }
+    }
+
+    article {
+        margin-left: 15px;
+        font-family: "Roboto", serif;
+
+        i {
+            color: orangered;
+            border: solid 1px;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: gray;
+            margin: 10px 0 10px 0;
+        }
+
+        a {
+            color: orangered;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .recuadro {
+        margin: 20px;
+        margin-bottom: 20px;
+        border:solid 3px;
+        border-color: orangered;
+        display: flex;
+        justify-content: center;
+        transform: rotate(10deg);
+        img{
+            transform: rotate(-10deg);
+        }
+        
+    }
+
+    span {
+        color: orangered
+    }
+
+    button {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Pie de la web */
+
+footer {
+    padding: 5px;
+    background-color: rgb(40, 40, 58);
+    color: white;
+    font-family: "Roboto", serif;
+}

@@ -6,7 +6,10 @@
         <title>Hamburguesería Rovers</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pacifico&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        </head>
     <body>
         <header>
             <div class="contenedor-azul">
@@ -15,7 +18,7 @@
                     <p> rover@gmail.com</p>
                 </div>
                 <div class="cabecera">
-                    <i class="fa-solid fa-phone" style="color: #ff6600;"></i>
+                    <i class="fa-solid fa-phone fa-flip-horizontal" style="color: #ff6600;"></i>
                     <p> 91 555 66 77</p>
                 </div> 
                 <div class="cabecera">
@@ -28,53 +31,80 @@
                 </div>
             </div>
             <div class="navegador">
-                <img src="images\logo.jpg" alt="logo" height=30px>
+                <div class="desplegable">
+                    <img src="images\logo.jpg" alt="logo" height=25px>
+                    <i class="fa-solid fa-bars" style="color: #adadad;"></i>
+                </div>
                 <nav>
                     <a target="_blank" href="hamburgueseria.html"> Inicio </a>
+                    <hr>
                     <a target="_blank" href="hamburgueseria.html"> Menu </a>
+                    <hr>
                     <a target="_blank" href="hamburgueseria.html"> Blog </a>
+                    <hr>
                     <a target="_blank" href="hamburgueseria.html"> Equipo </a>
                 </nav>
             </div>
         </header>
         <main>
-            <section>
+            <div class="fondo">
                 <h1>Las mejores hamburguesas del mundo</h1>
-                <h3>Bienvenido a nuestra hamburguesería</h3>
+                <h2>Bienvenido a nuestra hamburguesería</h3>
                 <h3>Come a partir de 15€</h3>
-                <button type="button" id="Carta"> Nuestra Carta</button>
-            </section>
+                <button type="button" id="Carta"> Nuestra Carta →</button>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
+                </div>
+            </div>
             <section>
                 <h3> Our <span> Services </span></h3>
+                <div class="linea">
+                    <p class="x"> X </p>
+                    <hr>
+                </div>
                 <article>
-                    <p> <strong> 1. Carne 100% natural </strong></p>
-                    <p> Lorem ipsum dolor sit amet</p>
-                    <a href="hamburgueseria.html"> Leer más </a>
+                    <i class="fa-solid fa-gears" style="color: orangered;"></i>
+                    <h2> <strong> 1. Carne 100% natural </strong></h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque, mi id tincidunt tincidunt, massa nibh vulputate mauris, non dictum ante turpis ut enim. Phasellus vestibulum a sem ut hendrerit </p>
+                    <a href="hamburgueseria.html"> Leer más →</a>
                 </article>
+                <hr>
                 <article>
-                    <p> <strong> 2. Cocina moderna </strong></p>
-                    <p> Lorem ipsum dolor sit amet</p>
-                    <a href="hamburgueseria.html"> Leer más </a>
-                </article>   
+                    <i class="fa-solid fa-truck fa-flip-horizontal"></i>
+                    <h2> <strong> 2. Cocina moderna </strong></h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque, mi id tincidunt tincidunt, massa nibh vulputate mauris, non dictum ante turpis ut enim. Phasellus vestibulum a sem ut hendrerit</p>
+                    <a href="hamburgueseria.html"> Leer más →</a>
+                </article>  
+                <hr> 
                  <article>
-                    <p> <strong> 3. Servicio impecable </strong></p>
-                    <p> Lorem ipsum dolor sit amet</p>
-                    <a href="hamburgueseria.html"> Leer más </a>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2> <strong> 3. Servicio impecable </strong></h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque, mi id tincidunt tincidunt, massa nibh vulputate mauris, non dictum ante turpis ut enim. Phasellus vestibulum a sem ut hendrerit</p>
+                    <a href="hamburgueseria.html"> Leer más → </a>
                 </article>
+                <hr>
             </section>
             <section>
-                <img src="images\about-main.jpg" alt="sobre nosotros" width=50%>
                 <h3> About <span> Us </span></h3>
+                <div class="linea">
+                    <p class="x"> X </p>
+                    <hr>
+                </div>
+                <div class="recuadro">
+                    <img src="images\about-main.jpg" alt="sobre nosotros" width=100%>
+                </div>
                 <article>
-                    <p> <strong> The History </strong></p>
+                    <h2> <strong> The History </strong></h2>
                     <p><span> Our Restaurant</span></p>
-                    <p> Lorem ipsum dolor sit amet</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque, mi id tincidunt tincidunt, massa nibh vulputate mauris, non dictum ante turpis ut enim. Phasellus vestibulum a sem ut hendrerit</p>
                     <button type="button" id="Carta"> Leer más</button>
                 </article>
             </section>
         </main>
         <footer>
-            <p> aviso de privacidad </p>
+            <p> Copyright©2020 - Aviso Legal - Cookies </p>
         </footer>        
     </body>
 
