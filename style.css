@@ -31,18 +31,18 @@ input,select{vertical-align:middle}
 
 .cabecera{
     color:white;
-    display: flex;          /* Flexbox para alinear texto e icono */
+    display: flex;         
     justify-content: space-around; 
-    align-items: center;     /* Alineación vertical */
-    gap: 10px;               /* Espaciado entre el texto y el icono */
-    padding: 10px;             /* Espaciado interno */
+    align-items: center;     
+    gap: 10px;              
+    padding: 10px;            
     p {
-        margin: 0;              /* Elimina márgenes predeterminados */
-        flex: 1;                /* Permite que el texto ocupe espacio restante */
-        word-wrap: break-word;  /* Ajusta texto si es muy largo */
+        margin: 0;              
+        flex: 1;                
+        word-wrap: break-word;  
     }
     .fa-solid {
-        flex-shrink: 0;         /* Impide que el icono se reduzca al cambiar el tamaño de la pantalla */
+        flex-shrink: 0;         
     }
 }
 
@@ -52,6 +52,9 @@ input,select{vertical-align:middle}
     justify-content: space-between;
     align-items: center;
     margin: 15px;
+    i{
+        cursor: pointer;
+    }
 }
 
 hr {
@@ -116,12 +119,17 @@ nav {
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 button {
     padding: 8px 10px;
     background-color: coral;
     color: whitesmoke;
     border: none;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 section {
@@ -213,7 +221,86 @@ section {
 
 footer {
     padding: 5px;
+    width: 100%;
     background-color: rgb(40, 40, 58);
     color: white;
     font-family: "Roboto", serif;
+    position: fixed;
+    bottom: 0;
+    a{
+        color: white;
+    }
+}
+
+
+/* VERSIÓN ESCRITORIO */
+
+
+
+@media screen and (min-width: 768px) {
+    /* Cabecera de la web */
+
+.contenedor-azul {
+    display:flex; 
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    p {
+        display:contents;
+    }
+}
+
+.desplegable {
+    i{
+        display: none;
+        cursor: pointer;
+    }
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+        padding-right: 100px;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+/* Cuerpo de la web */
+
+.fondo {
+    h1, h2, h3, button, .redes {
+        margin-left: 15%;
+    }
+}
+
+section {
+
+    .articulos {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        article {
+            border-left: 1px solid gray;
+            padding-left: 15px;
+        }
+    }
+
+    .encuadre {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
