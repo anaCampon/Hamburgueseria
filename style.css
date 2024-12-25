@@ -76,6 +76,8 @@ nav {
 
 /* Cuerpo de la web */
 
+
+
 .fondo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fondo.jpg");
     background-position: center;
@@ -219,8 +221,31 @@ section {
 
 /* Pie de la web */
 
+.subir {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    rotate: 270deg;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        color: #ffffff;
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
 footer {
-    padding: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: rgb(40, 40, 58);
     color: white;
@@ -234,8 +259,6 @@ footer {
 
 
 /* VERSIÓN ESCRITORIO */
-
-
 
 @media screen and (min-width: 768px) {
     /* Cabecera de la web */
@@ -303,4 +326,63 @@ section {
         margin-top: 5%;
         margin-bottom: 5%;
     }
+}
+}
+
+/* TRANSICIONES Y ANIMACIONES*/
+
+@Keyframes rotar-borde {
+    0% { rotate: 0deg;}
+    100% { rotate: -10deg;}
+}
+
+@Keyframes rotar-imagen {
+    0% { rotate: 0deg;}
+    100% { rotate: 10deg;}
+}
+
+@keyframes rotar-borde-reverse {
+    0% { rotate: -10deg; }
+    100% { rotate: 0deg; }
+}
+
+@keyframes rotar-imagen-reverse {
+    0% { rotate: 10deg; }
+    100% { rotate: 0deg; }
+}
+
+.recuadro:hover {
+    animation: rotar-borde linear 1s;
+    animation-fill-mode: both;
+    
+    img {
+        animation: rotar-imagen linear 1s; 
+        animation-fill-mode: both;
+    }
+}
+
+.recuadro {
+    animation: rotar-borde-reverse linear 1s;
+    animation-fill-mode: both;
+    img {
+        animation: rotar-imagen-reverse linear 1s;
+        animation-fill-mode: both;
+    }
+}
+
+
+
+button:hover {
+    background-color: rgba(255, 127, 80, 0);
+    color: coral;
+    border: solid 1px;
+    border-color:  coral;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+footer a:hover{
+    color: orangered;
 }
